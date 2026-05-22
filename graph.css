@@ -8,6 +8,9 @@ article-direction-column {
     display: flex;
     flex-direction: column;
 }
+body {
+    font-family: 'Arima', sans-serif;
+}
 header{
     display: flex;
     flex-direction: column;
