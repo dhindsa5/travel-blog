@@ -1,0 +1,54 @@
+
+/* 
+ALS NÄCHSTES: 
+    FONTS
+*/
+
+article-direction-column {
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vwd;
+    margin: 0px 32px;
+}
+h2 {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.header-direction-column {
+    display: flex;
+    flex-direction: column;
+}
+.header-direction-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.weather-section figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.graph-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.beach-activities-section figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.accommodation-expenses-section figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
