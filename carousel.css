@@ -20,6 +20,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Palanquin-Bold";
+  src: url("./assets/fonts/Palanquin/Palanquin-Bold.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -31,10 +38,12 @@ html {
   font-size: 16px;
 }
 
-.full-content {
+.full_content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 80px 120px;
+  gap: 88px;
 }
 
 .header {
@@ -42,45 +51,190 @@ html {
   height: 128px;
   display: flex;
   align-items: center;
-  background:#4EA487;
+  background: #4ea487;
 }
 
-.nav{
-    display:flex;
-    align-items:center;
-    padding-left: 146px;
-    padding-top: 16px;
-    gap:80px;
+.nav {
+  display: flex;
+  align-items: center;
+  padding-left: 146px;
+  padding-top: 16px;
+  gap: 80px;
 }
 
-.logo{
-    width:120px;
-    height:120px;
+.logo {
+  width: 120px;
+  height: 120px;
 }
 
-.nav-links{
-    display:flex;
-    gap:72px;
+.nav_links {
+  display: flex;
+  gap: 72px;
 }
 
-.nav-links a{
-    font-family:'Arima';
-    font-weight:700;
-    font-size:24px;
-    color:#F8F5EB;
-    text-decoration:none;
-    gap:10px;
+.nav_links a {
+  font-family: "Arima";
+  font-weight: 700;
+  font-size: 24px;
+  color: #f8f5eb;
+  text-decoration: none;
+  gap: 10px;
 }
 
-.meta-info{
-    display:flex;
-    gap:32px;
-    font-size:16px;
-    color:#54370D;
-    align-items:center;
+.article_header {
+  max-width: 1201px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
-.meta-item img{
-    height:18px;
-    width: 18px;
+.headline_text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sub_headline {
+  font-size: 40px;
+  font-family: "Palanquin-SemiBold";
+  font-weight: 600;
+  color: rgba(78, 164, 135, 1);
+  line-height: 120%;
+}
+
+.headline h1 {
+  font-family: "Arima";
+  font-size: 64px;
+  color: rgba(241, 201, 83, 1);
+  line-height: 120%;
+}
+
+.description {
+  font-size: 32px;
+  line-height: 120%;
+  color: rgba(84, 55, 13, 1);
+}
+
+.author_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  background: rgba(78, 164, 135, 0.2);
+  border-radius: 30px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+}
+
+.author_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.author_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+}
+
+.author_name {
+  font-family: "Arima";
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(84, 55, 13, 1);
+}
+
+.author_label {
+  font-family: "Arima";
+  font-size: 18px;
+  color: rgba(84, 55, 13, 1);
+}
+
+.author_bio {
+  font-family: "Palanquin";
+  color: rgba(84, 55, 13, 1);
+  line-height: 120%;
+}
+
+.meta_info {
+  display: flex;
+  gap: 32px;
+  font-size: 16px;
+  color: #54370d;
+  align-items: center;
+}
+
+.meta-item img {
+  height: 18px;
+  width: 18px;
+}
+
+.carousel_content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel_content h2{
+  font-family: "Arima";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  color: rgba(84, 55, 13, 1);
+}
+
+.carousel {
+  max-width: 1300px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+.slider-element {
+  width: 340px;
+  height: 440px;
+  position: relative;
+  border-radius: 16px;
+  margin: 0 -80px;
+  box-shadow: -9px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  transform: perspective(800px) rotateY(30deg) scale(0.85);
+  transition: all 300ms ease-out;
+}
+
+.slider-element:hover {
+  z-index: 2;
+
+  transform: perspective(800px) rotateY(0deg) scale(1);
+  margin: 0 40px;
+
+  box-shadow: -9px 5px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.slider-element:hover ~ .slider-element {
+  transform: perspective(700px) rotateY(-30deg) scale(0.85);
 }
