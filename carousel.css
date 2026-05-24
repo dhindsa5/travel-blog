@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Arima";
+  src: url("./assets/fonts/Arima/Arima-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Palanquin-Regular";
+  src: url("./assets/fonts/Palanquin/Palanquin-Regular.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Palanquin-SemiBold";
+  src: url("./assets/fonts/Palanquin/Palanquin-SemiBold.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Palanquin-Regular";
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 16px;
+}
+
+.full-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  background:#4EA487;
+}
+
+.nav{
+    display:flex;
+    align-items:center;
+    padding-left: 146px;
+    padding-top: 16px;
+    gap:80px;
+}
+
+.logo{
+    width:120px;
+    height:120px;
+}
+
+.nav-links{
+    display:flex;
+    gap:72px;
+}
+
+.nav-links a{
+    font-family:'Arima';
+    font-weight:700;
+    font-size:24px;
+    color:#F8F5EB;
+    text-decoration:none;
+    gap:10px;
+}
+
+.meta-info{
+    display:flex;
+    gap:32px;
+    font-size:16px;
+    color:#54370D;
+    align-items:center;
+}
+
+.meta-item img{
+    height:18px;
+    width: 18px;
+}
