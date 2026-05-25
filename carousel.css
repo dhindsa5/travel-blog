@@ -78,7 +78,44 @@ html {
   font-size: 24px;
   color: #f8f5eb;
   text-decoration: none;
-  gap: 10px;
+  position: relative; 
+  display: inline-block;
+}
+
+.nav_links a::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 20px);                 
+    height: 25px;                
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    
+    background-size: contain;
+    opacity: 0;                  
+    transition: opacity 300ms ease; 
+}
+
+.nav_links a:focus{
+  color: rgba(241, 201, 83, 1);
+}
+
+.nav_links a:nth-child(1)::after {
+  background-image: url(/travel-blog/assets/img/page-carousel/highlight-hover.png);
+}
+
+.nav_links a:nth-child(2)::after {
+  background-image: url(/travel-blog/assets/img/page-carousel/faq-hover.png);
+}
+
+.nav_links a:nth-child(3)::after {
+  background-image: url(/travel-blog/assets/img/page-carousel/contact-hover.png);
+}
+
+.nav_links a:hover::after{
+  opacity: 1;
 }
 
 .article_header {
