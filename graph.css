@@ -8,6 +8,10 @@ article-direction-column {
     flex-direction: column;
 }
 
+article {
+    margin-top: 190px;
+}
+
 html {
     margin: 0px 120px;
 }
@@ -25,6 +29,66 @@ header {
     border: 16px;
 
 }
+
+ul {
+    list-style: none;
+}
+
+/*  Navigation Bar
+-------------------------------------------------------------------
+*/
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100dvw;
+    height: 128px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: #4ea487;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding-left: 146px;
+    padding-top: 16px;
+    gap: 80px;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 10%;
+}
+
+.nav_links {
+    display: flex;
+    gap: 72px;
+    position: absolute;
+    left: 20%;
+}
+
+.nav_links a {
+    font-family: "Arima";
+    font-weight: 700;
+    font-size: 24px;
+    color: #f8f5eb;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.nav_links a:hover {
+    color: rgba(241, 201, 83, 1);
+}
+
+/*
+-------------------------------------------------------------------
+*/
 
 .info-card-author>p {
     font-family: Palanquin-Regular, sans-serif;
@@ -95,6 +159,7 @@ aside h3 {
 .header-left {
     gap: 40px;
     width: 100%;
+    padding-bottom: 16px;
 }
 
 .weather-section figure {
@@ -272,6 +337,60 @@ footer>img {
     position: absolute;
     left: 30%;
     top: 52px;
+}
+
+.footer {
+    height: 150px;
+    padding: 0px 120px;
+    display: flex;
+    width: 100dvw;
+    justify-content: space-between;
+    background-color: rgba(78, 164, 135, 1);
+    margin-left: -120px;
+    flex-direction: row;
+}
+
+.copyright_group span {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 120%;
+    font-family: Palanquin-Regular, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.copyright_group {
+    font-size: 18px;
+    color: white;
+    display: flex;
+    gap: 4px;
+}
+
+.footer_links {
+    width: 100%;
+    display: flex;
+    gap: 72px;
+    align-items: center;
+
+}
+
+.footer_links img {
+    object-fit: contain;
+}
+
+.footer_links a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_links a:hover {
+    color: rgba(241, 201, 83, 1);
+}
+
+.socialmedia_rechts {
+    display: flex;
+    gap: 16px;
+    align-items: center;
 }
 
 
