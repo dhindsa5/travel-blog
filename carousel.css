@@ -277,6 +277,7 @@ html {
 }
 
 .content_text {
+  max-width: 1201px;
   font-size: 24px;
   line-height: 120%;
   color: rgba(61, 61, 61, 1);
