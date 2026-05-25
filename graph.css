@@ -1,4 +1,3 @@
-
 /* 
 ALS NÄCHSTES: 
     FONTS
@@ -8,29 +7,94 @@ article-direction-column {
     display: flex;
     flex-direction: column;
 }
+
+html {
+    margin: 0px 120px;
+}
+
 body {
     font-family: 'Arima', sans-serif;
 }
-header{
+
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100vwd;
-    margin: 0px 32px;
+    height: 100%;
+    margin: 88px 0px;
+    border: 16px;
+
 }
+
+.info-card-author>p {
+    font-family: Palanquin-Regular, sans-serif;
+}
+
+h1 {
+    color: #F1C953;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+}
+
 h2 {
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 32px;
+    color: #54370D;
+    font-weight: 600;
+}
+
+aside {
+    background-color: #4EA48733;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 30px;
+    ;
+}
+
+aside img {
+    width: 120px;
+}
+
+aside p {
+    font-size: 16px;
+    text-align: left;
+    line-height: 120%;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: #54370D;
+}
+
+aside h3 {
+    color: #54370D;
+}
+
+
+#article-title {
+    color: #4EA487;
+    font-size: 40px;
+    font-weight: 600;
 }
 
 .header-direction-column {
     display: flex;
     flex-direction: column;
 }
+
 .header-direction-row {
     display: flex;
     flex-direction: row;
+}
+
+.header-left {
+    gap: 40px;
+    width: 100%;
 }
 
 .weather-section figure {
@@ -45,13 +109,183 @@ h2 {
     justify-content: space-around;
     align-items: center;
 }
+
 .beach-activities-section figure {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .accommodation-expenses-section figure {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#subtitle {
+    font-size: 28px;
+    line-height: 110%;
+    font-weight: 400px;
+    color: #54370D;
+}
+
+.header-direction-column>div:nth-child(2) {
+    align-items: flex-end;
+}
+
+.article-meta {
+    padding-top: 60px;
+    color: #54370D;
+    gap: 32px;
+    font-family: Palanquin-Regular, sans-serif;
+}
+
+#landing-info-text {
+    margin-top: 32px;
+    font-family: Palanquin-Regular, sans-serif;
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 400;
+    color: #3D3D3D;
+}
+
+.meta-div {
+    gap: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.aside-header {
+    font-family: Arima, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
+}
+
+.weather-section img {
+    width: 700px;
+    margin-top: 16px;
+    margin-bottom: 60px;
+}
+
+.weather-section figcaption {
+    color: #3D3D3D;
+    font-size: 24px;
+    line-height: 120%;
+    font-family: Palanquin-Regular, sans-serif;
+}
+
+.graph-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 88px 0;
+}
+
+.graph-section>section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.graph-section img {
+    width: 575px;
+}
+
+#second-graph-img {
+    padding-top: 44px;
+}
+
+.graph-section figcaption {
+    color: #3D3D3D;
+    font-size: 24px;
+    line-height: 120%;
+    font-family: Palanquin-Regular, sans-serif;
+    padding: 16px 16px;
+    min-height: 160px;
+    /* Wert ggf. anpassen */
+}
+
+.beach-activities-section {
+    padding-right: 64px;
+}
+
+.accommodation-expenses-section {
+    padding-left: 64px;
+}
+
+#ending-info-text {
+    color: #3D3D3D;
+    font-size: 24px;
+    line-height: 120%;
+    font-family: Palanquin-Regular, sans-serif;
+    margin-bottom: 88px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+}
+
+footer p {
+    color: #54370D;
+    font-size: 24px;
+    line-height: 120%;
+    font-family: Arima, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+footer span {
+    color: #F1C953;
+    font-size: 24px;
+    line-height: 120%;
+    font-family: Arima, sans-serif;
+    font-weight: 700;
+    letter-spacing: 5%;
+}
+
+.share-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    background-color: #4EA487;
+    border-radius: 40px;
+    width: 160px;
+    padding: 8px 0;
+
+    margin-bottom: 88px;
+}
+
+footer>img {
+    position: absolute;
+    left: 30%;
+    top: 52px;
+}
+
+
+
+
+
+@media screen and (min-width: 1440px) {
+    * {
+        margin: 0px;
+        border: 0px;
+    }
+
+    html {
+        padding-left: max(calc(50% - 720px), 0px);
+        padding-right: max(calc(50% - 720px), 0px);
+    }
 }
