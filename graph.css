@@ -39,10 +39,13 @@ ul {
 */
 .header {
     position: absolute;
-    left: 0;
     top: 0;
-    width: 100dvw;
+    left: max(calc(50% - 720px), 0px);
+    right: 0;
+    width: 100%;
+    max-width: 1440px;
     height: 128px;
+    margin: 0 auto;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -89,6 +92,10 @@ ul {
 /*
 -------------------------------------------------------------------
 */
+
+.meta-icon {
+    width: 16px;
+}
 
 .info-card-author>p {
     font-family: Palanquin-Regular, sans-serif;
@@ -199,10 +206,18 @@ aside h3 {
 }
 
 .article-meta {
+    display: flex;
+    flex-direction: row;
     padding-top: 60px;
     color: #54370D;
     gap: 32px;
     font-family: Palanquin-Regular, sans-serif;
+}
+
+.article-meta-row {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
 }
 
 #landing-info-text {
@@ -276,11 +291,11 @@ aside h3 {
 }
 
 .beach-activities-section {
-    padding-right: 64px;
+    padding-right: 32px;
 }
 
 .accommodation-expenses-section {
-    padding-left: 64px;
+    padding-left: 32px;
 }
 
 #ending-info-text {
@@ -343,10 +358,13 @@ footer>img {
     height: 150px;
     padding: 0px 120px;
     display: flex;
-    width: 100dvw;
+    left: max(calc(50% - 720px), 0px);
+    right: max(calc(50% - 720px), 0px);
+    width: 100%;
+    max-width: 1440px;
     justify-content: space-between;
     background-color: rgba(78, 164, 135, 1);
-    margin-left: -120px;
+
     flex-direction: row;
 }
 
@@ -393,10 +411,6 @@ footer>img {
     align-items: center;
 }
 
-
-
-
-
 @media screen and (min-width: 1440px) {
     * {
         margin: 0px;
@@ -406,5 +420,124 @@ footer>img {
     html {
         padding-left: max(calc(50% - 720px), 0px);
         padding-right: max(calc(50% - 720px), 0px);
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+    .beach-activities-section figcaption {
+        font-size: 20px;
+        width: 480px;
+    }
+
+    .accommodation-expenses-section figcaption {
+        font-size: 20px;
+        width: 480px;
+    }
+
+    .beach-activities-section {
+        padding-right: 0px;
+    }
+
+    .accommodation-expenses-section {
+        padding-left: 0px;
+    }
+
+    .graph-section img {
+        width: 480px;
+    }
+
+    #second-graph-img {
+        padding-top: 16px;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    html {
+        margin: 0px 32px;
+    }
+
+    .article-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding-top: 96px;
+    }
+
+    .header-direction-column>div:nth-child(2) {
+        align-items: flex-start;
+    }
+
+    .nav_links a {
+        font-size: 20px;
+    }
+
+    .article-meta-row {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .logo {
+        left: 4%;
+    }
+
+
+    .header-left h1 {
+        font-size: 46px;
+    }
+
+    #article-title {
+        font-size: 24px;
+    }
+
+    #subtitle {
+        font-size: 20px;
+    }
+
+    #landing-info-text {
+        font-size: 18px;
+    }
+
+    .weather-section img {
+        width: 650px;
+    }
+
+    .weather-section figcaption {
+        font-size: 18px;
+    }
+
+    .graph-section {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .graph-section figcaption {
+        font-size: 18px;
+        min-height: 0px;
+    }
+
+    #second-graph-img {
+        padding-top: 0px;
+    }
+
+    #ending-info-text {
+        font-size: 18px;
+    }
+
+    .footer {
+        left: -32px;
+        width: calc(100% + 64px);
+    }
+
+    .footer_links {
+        margin-left: -80px;
+        gap: 48px;
+        font-size: 16px;
+    }
+    .socialmedia_rechts {
+        margin-right: -80px;
     }
 }
