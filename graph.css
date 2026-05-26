@@ -93,6 +93,28 @@ ul {
 -------------------------------------------------------------------
 */
 
+#vector13 {
+    display: none;
+}
+
+.mobile-footer {
+    height: 150px;
+    padding: 0px 120px;
+    display: flex;
+    left: max(calc(50% - 720px), 0px);
+    right: max(calc(50% - 720px), 0px);
+    width: 100%;
+    max-width: 1440px;
+    justify-content: space-between;
+    background-color: rgba(78, 164, 135, 1);
+
+    flex-direction: row;
+}
+
+.mobile-footer {
+    display: none;
+}
+
 .meta-icon {
     width: 16px;
 }
@@ -299,7 +321,7 @@ aside h3 {
 }
 
 #ending-info-text {
-    color: #3D3D3D;
+    color: #54370D;
     font-size: 24px;
     line-height: 120%;
     font-family: Palanquin-Regular, sans-serif;
@@ -537,7 +559,428 @@ footer>img {
         gap: 48px;
         font-size: 16px;
     }
+
     .socialmedia_rechts {
         margin-right: -80px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    html {
+        margin: 0 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    header {
+        margin: 32px 0;
+    }
+
+    .header-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .article-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding-top: 16px;
+    }
+
+    .info-card-author {
+        width: 449px;
+        justify-content: center;
+    }
+
+    #landing-info-text {
+        font-size: 16px;
+    }
+
+    .header-direction-column>div:nth-child(2) {
+        align-items: flex-start;
+    }
+
+    #article-title {
+        font-size: 20px;
+    }
+
+    .header-left h1 {
+        font-size: 40px;
+    }
+
+    #subtitle {
+        font-size: 18px;
+    }
+
+    .graph-section {
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+        margin: 32px 0;
+    }
+
+    .graph-section figcaption {
+        font-size: 16px;
+        min-height: 0px;
+    }
+
+    #second-graph-img {
+        padding-top: 0px;
+    }
+
+    #ending-info-text {
+        font-size: 16px;
+    }
+
+    .weather-section img {
+        width: 449px;
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
+
+    .weather-section figcaption {
+        font-size: 16px;
+    }
+
+    .beach-activities-section {
+        padding-right: 0px;
+    }
+
+    .accommodation-expenses-section {
+        padding-left: 0px;
+    }
+
+    .beach-activities-section img {
+        width: 449px;
+        padding: 8px 0;
+    }
+
+    .accommodation-expenses-section img {
+        width: 449px;
+        padding: 8px 0;
+    }
+
+    #popular-beach-text {
+        font-size: 16px;
+    }
+
+    .graph-section figcaption {
+        padding: 8px 0;
+    }
+
+    #ending-info-text {
+        margin-bottom: 40px;
+    }
+
+    footer p {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    footer>img {
+        width: 32px;
+        left: 12%;
+    }
+
+    #vector12 {
+        display: none;
+    }
+
+    #vector13 {
+        display: block;
+    }
+
+    .share-button {
+        gap: 8px;
+        text-align: center;
+        margin-bottom: 128px;
+    }
+
+    .share-button img {
+        width: 0px;
+    }
+
+    article {
+        margin-top: 88px;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+        left: calc(50% - 32px);
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .mobile-footer {
+        height: 136px;
+        display: flex;
+        padding: 0;
+        left: -32px;
+        width: calc(100% + 48px);
+    }
+
+    .footer_links {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 2px;
+        padding-left: 32px;
+    }
+
+    .socialmedia_rechts {
+        padding-right: 32px;
+        padding-top: 60px;
+    }
+
+    #tiktok-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    #youtube-icon {
+        width: 32px;
+        height: 24px;
+    }
+
+    #facebook-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    #instagram-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    html {
+        margin: 0 8px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    header {
+        margin: 32px 0;
+    }
+
+    .header-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .article-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding-top: 16px;
+    }
+
+    .article-meta-row {
+        gap: 8px;
+    }
+
+    .info-card-author {
+        width: 320px;
+        justify-content: center;
+    }
+
+    #landing-info-text {
+        font-size: 16px;
+        margin-top: 24px;
+    }
+
+    .header-direction-column>div:nth-child(2) {
+        align-items: flex-start;
+    }
+
+    #article-title {
+        font-size: 20px;
+    }
+
+    .header-left h1 {
+        font-size: 40px;
+    }
+
+    #subtitle {
+        font-size: 18px;
+    }
+
+    .graph-section {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        margin: 16px 0;
+    }
+
+    .graph-section figcaption {
+        font-size: 16px;
+        min-height: 0px;
+    }
+
+    #second-graph-img {
+        padding-top: 0px;
+    }
+
+    #ending-info-text {
+        font-size: 16px;
+    }
+
+    .weather-section img {
+        width: 320px;
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
+
+    .weather-section figcaption {
+        font-size: 16px;
+    }
+
+    .beach-activities-section {
+        padding-right: 0px;
+        margin-top: 8px;
+    }
+
+    .accommodation-expenses-section {
+        padding-left: 0px;
+    }
+
+    .beach-activities-section img {
+        width: 320px;
+        padding: 8px 0;
+    }
+
+    .accommodation-expenses-section img {
+        width: 320px;
+    }
+
+    #popular-beach-text {
+        font-size: 16px;
+        padding: 8px 8px;
+    }
+
+    .graph-section figcaption {
+        padding: 8px 8px;
+    }
+
+    #ending-info-text {
+        margin-bottom: 40px;
+    }
+
+    footer p {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    footer>img {
+        width: 32px;
+        left: 12%;
+    }
+
+    #vector12 {
+        display: none;
+    }
+
+    #vector13 {
+        display: block;
+    }
+
+    .share-button {
+        gap: 8px;
+        text-align: center;
+        margin-bottom: 128px;
+    }
+
+    .share-button img {
+        width: 16px;
+        height: 16px;
+    }
+
+    article {
+        margin-top: 88px;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+        left: calc(50% - 32px);
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .mobile-footer {
+        height: 136px;
+        display: flex;
+        padding: 0;
+        left: -32px;
+        width: calc(100% + 48px);
+    }
+
+    .footer_links {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 2px;
+        padding-left: 32px;
+        margin-right: -32px;
+    }
+
+    .socialmedia_rechts {
+        padding-right: 16px;
+        padding-top: 60px;
+        gap: 8px;
+    }
+
+    #tiktok-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    #youtube-icon {
+        width: 32px;
+        height: 24px;
+    }
+
+    #facebook-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    #instagram-icon {
+        width: 24px;
+        height: 24px;
     }
 }
