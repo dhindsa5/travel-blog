@@ -75,7 +75,7 @@ html {
 .nav_links a {
   font-family: "Arima";
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #f8f5eb;
   text-decoration: none;
   position: relative;
@@ -120,6 +120,7 @@ html {
 
 .article_header {
   max-width: 1201px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -138,7 +139,7 @@ html {
 }
 
 .sub_headline {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: "Palanquin-SemiBold";
   font-weight: 600;
   color: rgba(78, 164, 135, 1);
@@ -147,18 +148,20 @@ html {
 
 .headline h1 {
   font-family: "Arima";
-  font-size: 64px;
+  font-size: 4rem;
   color: rgba(241, 201, 83, 1);
   line-height: 120%;
 }
 
 .description {
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 120%;
   color: rgba(84, 55, 13, 1);
 }
 
 .author_info {
+  width: 561px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,25 +180,26 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 120%;
 }
 
 .author_details {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 240px;
+  gap: 12px;
 }
 
 .author_name {
   font-family: "Arima";
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: rgba(84, 55, 13, 1);
 }
 
 .author_label {
   font-family: "Arima";
-  font-size: 18px;
+  font-size: 1.125rem;
   color: rgba(84, 55, 13, 1);
 }
 
@@ -208,7 +212,7 @@ html {
 .meta_info {
   display: flex;
   gap: 32px;
-  font-size: 16px;
+  font-size: 1rem;
   color: #54370d;
   align-items: center;
 }
@@ -228,7 +232,7 @@ html {
 .carousel_content h2 {
   font-family: "Arima";
   font-weight: 600;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 120%;
   color: rgba(84, 55, 13, 1);
 }
@@ -278,14 +282,14 @@ html {
 
 .content_text {
   max-width: 1201px;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 120%;
   color: rgba(61, 61, 61, 1);
 }
 
 .list_text {
   max-width: 1000px;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: rgba(61, 61, 61, 1);
   display: flex;
   flex-direction: column;
@@ -304,7 +308,7 @@ html {
 }
 
 .tipps_list {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 120%;
   background-color: rgba(78, 164, 135, 0.2);
   border-radius: 30px;
@@ -331,7 +335,7 @@ html {
 }
 
 .share_content p {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "Arima";
   line-height: 120%;
   color: rgba(84, 55, 13, 1);
@@ -410,7 +414,7 @@ html {
 
 .share_links a {
   font-family: "Arima";
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   color: rgba(78, 164, 135, 1);
   text-decoration: underline;
@@ -445,7 +449,7 @@ html {
 }
 
 .copyright_group {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: white;
   display: flex;
   gap: 4px;
@@ -470,4 +474,26 @@ html {
   display: flex;
   gap: 16px;
   align-items: center;
+}
+
+@media screen and (min-width: 1441px) {
+    .header {
+        padding: 16px max(0px, calc(50% - 720px));
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .footer {
+        padding: 60px max(120px, calc(50% - 720px));
+    }
+}
+
+@media screen and (max-width: 1120px){
+  .full_content{
+    padding: 80px 80px;
+  }
+}
+
+@media screen and (max-width: 1051px){
+
 }
