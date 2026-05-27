@@ -1,14 +1,16 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
+    box-sizing: border-box;
+    margin: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
-margin-top: 128px;
+    margin-top: 128px;
 }
 
 /* Auf 1440px begrenzen!*/
@@ -33,42 +35,49 @@ margin-top: 128px;
     font-weight: 100 900;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Palanquin-Bold';
     src: url('./assets/fonts/Palanquin/Palanquin-Bold.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Palanquin-ExtraLight';
     src: url('./assets/fonts/Palanquin/Palanquin-ExtraLight.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Palanquin-Light';
     src: url('./assets/fonts/Palanquin/Palanquin-Light.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Palanquin-Medium';
     src: url('./assets/fonts/Palanquin/Palanquin-Medium.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Palanquin-Regular';
     src: url('./assets/fonts/Palanquin/Palanquin-Regular.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Palanquin-SemiBold';
     src: url('./assets/fonts/Palanquin/Palanquin-SemiBold.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Palanquin-Thin';
     src: url('./assets/fonts/Palanquin/Palanquin-Thin.ttf') format('truetype');
@@ -88,6 +97,7 @@ header {
     border: 16px;
 
 }
+
 .header {
     position: absolute;
     top: 0;
@@ -152,6 +162,7 @@ ul {
     .nav_links a {
         font-size: 20px;
     }
+
     .logo {
         left: 4%;
     }
@@ -204,6 +215,7 @@ ul {
         left: calc(50% - 32px);
     }
 }
+
 /*
 -------------------------------------------------------------------
 */
@@ -241,6 +253,7 @@ footer span {
     font-weight: 700;
     letter-spacing: 5%;
 }
+
 .mobile-footer {
     height: 150px;
     padding: 0px 120px;
@@ -436,5 +449,181 @@ footer span {
 */
 
 
+/* Contact Section
+-------------------------------------------------------------------
+*/
+.contact-section h2 {
+    font-family: Arima, sans-serif;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 120%;
+    color: #4EA487;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
 
+.contact-section h2 img {
+    width: 48px;
+    height: 48px;
+}
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin: 0 160px;
+}
+
+.first-form-line {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 48%;
+}
+
+.form-field label {
+    font-size: 24px;
+    color: #54370D;
+    font-weight: 500;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #54370D;
+    background: transparent;
+    outline: none;
+    padding: 8px 0;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.form-field textarea {
+    height: 40px;
+    min-height: 40px;
+    padding: 8px 0;
+    resize: none;
+    overflow: hidden;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.contact-form label {
+    font-family: Palanquin-Regular, sans-serif;
+    Color: #54370D;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+#contact-span {
+    font-family: Palanquin-Regular, sans-serif;
+    Color: #54370D;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.brown-span {
+    font-family: Palanquin-Regular, sans-serif;
+    Color: #54370D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.green-span {
+    font-family: Palanquin-Regular, sans-serif;
+    Color: #4EA487;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -3%;
+    padding: 0 4px;
+}
+
+.send-button {
+    font-family: Arima, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #737373;
+    line-height: 120%;
+    letter-spacing: 5%;
+    border: black 1px solid;
+    border-radius: 40px;
+    padding: 0 24px;
+    height: 48px;
+    width: 140px;
+    background-color: transparent;
+}
+
+#button-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 128px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#checkbox-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+#checkbox-line input {
+    margin-right: 8px;
+}
+
+#checkbox-line a {
+    text-decoration: none;
+}
+
+#checkbox-line a:hover {
+    color: #5cdcb2;
+}
+
+.contact-section h2 {
+    margin-top: 128px;
+}
+
+#button-position button:hover {
+    background-color: #e9e7e7;
+}
+
+#button-position button:active {
+    background-color: #85d0b7;
+}
+
+/*
+-------------------------------------------------------------------
+*/
