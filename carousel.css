@@ -78,27 +78,27 @@ html {
   font-size: 24px;
   color: #f8f5eb;
   text-decoration: none;
-  position: relative; 
+  position: relative;
   display: inline-block;
 }
 
 .nav_links a::after {
-    content: "";
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% + 20px);                 
-    height: 25px;                
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    
-    background-size: contain;
-    opacity: 0;                  
-    transition: opacity 300ms ease; 
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 20px);
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  background-size: contain;
+  opacity: 0;
+  transition: opacity 300ms ease;
 }
 
-.nav_links a:focus{
+.nav_links a:focus {
   color: rgba(241, 201, 83, 1);
 }
 
@@ -114,7 +114,7 @@ html {
   background-image: url(/travel-blog/assets/img/page-carousel/contact-hover.png);
 }
 
-.nav_links a:hover::after{
+.nav_links a:hover::after {
   opacity: 1;
 }
 
@@ -321,7 +321,7 @@ html {
 }
 
 .share_content {
-  max-width: 480px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -337,10 +337,103 @@ html {
   color: rgba(84, 55, 13, 1);
 }
 
+.share_action_area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.share_checkbox {
+  display: none;
+}
+
+.share_btn_label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.btn_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.btn_img_normal {
+  display: block;
+  transition: opacity 300ms ease;
+}
+
+.btn_img_clicked_1 {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.btn_img_clicked_2 {
+  width: 32px;
+  height: 32px;
+  opacity: 0;
+  visibility: hidden;
+  margin-left: -50px;
+  transition:
+    max-width 300ms ease,
+    opacity 300ms ease,
+    margin 300ms ease;
+}
+
 .swing_arrow {
   position: absolute;
   top: 50px;
   left: 5px;
+  pointer-events: none;
+}
+
+.share_links {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 5px;
+
+  max-width: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 0;
+  transition:
+    max-width 300ms ease,
+    opacity 300ms ease;
+}
+
+.share_links a {
+  font-family: "Arima";
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(78, 164, 135, 1);
+  text-decoration: underline;
+}
+
+.share_checkbox:checked ~ .share_btn_label .btn_img_normal {
+  opacity: 0;
+}
+.share_checkbox:checked ~ .share_btn_label .btn_img_clicked_1 {
+  opacity: 1;
+}
+
+.share_checkbox:checked ~ .share_btn_label .btn_img_clicked_2 {
+  max-width: 50px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.share_checkbox:checked ~ .share_links {
+  max-width: 150px;
+  opacity: 1;
+  visibility: visible;
+  margin-left: 15px;
 }
 
 .footer {
