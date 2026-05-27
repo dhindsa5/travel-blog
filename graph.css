@@ -445,6 +445,13 @@ footer>img {
     }
 }
 
+@media screen and (min-width: 1280px) and (max-width: 1360px) {
+footer>img {
+        left: 28%;
+        top: 52px;
+    }
+}
+
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
     .beach-activities-section figcaption {
         font-size: 20px;
@@ -472,6 +479,14 @@ footer>img {
         padding-top: 16px;
     }
 
+    
+}
+
+@media screen and (min-width: 950px) and (max-width: 1160px) {
+footer>img {
+        left: 26%;
+        top: 52px;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
@@ -562,6 +577,13 @@ footer>img {
 
     .socialmedia_rechts {
         margin-right: -80px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 949px) {
+footer>img {
+        left: 23%;
+        top: 52px;
     }
 }
 
@@ -768,6 +790,34 @@ footer>img {
     #instagram-icon {
         width: 24px;
         height: 24px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 799px) {
+footer>img {
+        left: 20%;
+        top: 52px;
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 768px) {
+footer>img {
+        left: 26%;
+        top: 52px;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 650px) {
+footer>img {
+        left: 23%;
+        top: 52px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 540px) {
+footer>img {
+        left: 17%;
+        top: 52px;
     }
 }
 
@@ -982,5 +1032,12 @@ footer>img {
     #instagram-icon {
         width: 24px;
         height: 24px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 480px) {
+footer>img {
+        left: 15%;
+        top: 52px;
     }
 }
