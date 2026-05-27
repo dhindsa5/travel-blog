@@ -122,7 +122,6 @@ html {
   max-width: 1201px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   gap: 30px;
 }
 
@@ -222,8 +221,13 @@ html {
   width: 18px;
 }
 
+.article_meta_row{
+  display: flex;
+  gap: 32px;
+}
+
 .carousel_content {
-  width: 100%;
+  width: 1300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -278,6 +282,14 @@ html {
 
 .slider-element:hover ~ .slider-element {
   transform: perspective(700px) rotateY(-30deg) scale(0.85);
+}
+
+input[name="beach-slider"] {
+  display: none;
+}
+
+.pagination {
+  display: none;
 }
 
 .content_text {
@@ -373,7 +385,9 @@ html {
   top: 0;
   opacity: 0;
   transform: translateX(-20px);
-  transition: opacity 300ms ease, transform 300ms ease;
+  transition:
+    opacity 300ms ease,
+    transform 300ms ease;
 }
 
 .btn_img_clicked_2 {
@@ -477,23 +491,255 @@ html {
 }
 
 @media screen and (min-width: 1441px) {
-    .header {
-        padding: 16px max(0px, calc(50% - 720px));
-    }
-}
-
-@media screen and (min-width: 1441px) {
-    .footer {
-        padding: 60px max(120px, calc(50% - 720px));
-    }
-}
-
-@media screen and (max-width: 1120px){
-  .full_content{
-    padding: 80px 80px;
+  .header {
+    padding: 16px max(0px, calc(50% - 720px));
   }
 }
 
-@media screen and (max-width: 1051px){
+@media screen and (min-width: 1441px) {
+  .footer {
+    padding: 60px max(120px, calc(50% - 600px));
+  }
+}
 
+@media screen and (max-width: 1270px) {
+  .full_content {
+    padding: 80px 90px;
+  }
+  .footer{
+    padding: 60px 90px;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .full_content{
+    padding: 80px 70px;
+  }
+  .footer{
+    padding: 60px 70px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .full_content{
+    padding: 80px 50px;
+    gap: 60px;
+  }
+  .footer{
+    padding: 60px 50px;
+  }
+}
+
+@media screen and (max-width: 1130px){
+  html{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1010px){
+
+  .full_content{
+    padding: 70px 15px;
+  }
+
+  .article_header{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .author_info{
+    width: 500px;   
+  }
+
+  .nav{
+    padding-left: 15px;
+  }
+
+  .footer{
+    padding: 30px 15px;
+  }
+  .footer_links{
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  
+  .full_content{
+    padding-top: 24px;
+  }
+  .nav_links{
+    display: none;
+  }
+
+  .logo{
+    position: absolute;
+    left: calc(50% - 60px);
+  }
+
+  .footer_links{
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+
+  .copyright_group{
+    align-items: center;
+  }
+
+}
+
+@media screen and (max-width: 550px){
+  
+  .author_info{
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 580px){
+  .meta_info{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  input[name="beach-slider"] {
+    display: none;
+  }
+
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .slider-element {
+    position: absolute;
+    width: 260px;
+    height: 360px;
+    margin: 0;
+    transition:
+      transform 500ms ease,
+      z-index 500ms ease,
+      opacity 500ms ease;
+    opacity: 0;
+    pointer-events: none;
+
+    transform: perspective(800px) translateX(0) scale(0.5) rotateY(0deg);
+    z-index: 1;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+  }
+
+  .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: rgba(78, 164, 135, 0.3);
+    cursor: pointer;
+    transition: all 300ms ease;
+  }
+
+  #slide-1:checked ~ .pagination .dot-1,
+  #slide-2:checked ~ .pagination .dot-2,
+  #slide-3:checked ~ .pagination .dot-3,
+  #slide-4:checked ~ .pagination .dot-4,
+  #slide-5:checked ~ .pagination .dot-5 {
+    background-color: #4ea487;
+    width: 34px;
+    border-radius: 14px;
+  }
+
+  #slide-1:checked ~ .carousel .c-1 {
+    transform: perspective(800px) translateX(0) scale(1) rotateY(0deg);
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  #slide-1:checked ~ .carousel .c-2 {
+    transform: perspective(800px) translateX(120px) scale(0.85) rotateY(-40deg);
+    z-index: 4;
+    opacity: 1;
+  }
+
+  #slide-2:checked ~ .carousel .c-1 {
+    transform: perspective(800px) translateX(-120px) scale(0.85) rotateY(40deg);
+    z-index: 4;
+    opacity: 1;
+  }
+
+  #slide-2:checked ~ .carousel .c-2 {
+    transform: perspective(800px) translateX(0) scale(1) rotateY(0deg);
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  #slide-2:checked ~ .carousel .c-3 {
+    transform: perspective(800px) translateX(120px) scale(0.85) rotateY(-40deg);
+    z-index: 4;
+    opacity: 1;
+  }
+
+  #slide-3:checked ~ .carousel .c-2 {
+    transform: perspective(800px) translateX(-120px) scale(0.85) rotateY(40deg);
+    z-index: 4;
+    opacity: 1;
+  }
+
+  #slide-3:checked ~ .carousel .c-3 {
+    transform: perspective(800px) translateX(0) scale(1) rotateY(0deg);
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  #slide-3:checked ~ .carousel .c-4 {
+    transform: perspective(800px) translateX(120px) scale(0.85) rotateY(-40deg);
+    z-index: 4;
+    opacity: 1;
+  }
+
+  #slide-4:checked ~ .carousel .c-3 {
+    transform: perspective(800px) translateX(-120px) scale(0.85) rotateY(40deg);
+    z-index: 4;
+    opacity: 1;
+  }
+
+  #slide-4:checked ~ .carousel .c-4 {
+    transform: perspective(800px) translateX(0) scale(1) rotateY(0deg);
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  #slide-4:checked ~ .carousel .c-5 {
+    transform: perspective(800px) translateX(120px) scale(0.85) rotateY(-40deg);
+    z-index: 4;
+    opacity: 1;
+  }
+
+  #slide-5:checked ~ .carousel .c-4 {
+    transform: perspective(800px) translateX(-120px) scale(0.85) rotateY(40deg);
+    z-index: 4;
+    opacity: 1;
+  }
+
+  #slide-5:checked ~ .carousel .c-5 {
+    transform: perspective(800px) translateX(0) scale(1) rotateY(0deg);
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
