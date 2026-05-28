@@ -406,11 +406,19 @@ ul {
   margin: 0;
   font-size: 52px;
   line-height: 120%;
-  color: #111827;
+  color: #4ea487;
   font-weight: 700;
   width: 93px;
   height: 49px;
-  font-family: "Arima-bold", sans-serif;
+  font-family: "Arima", sans-serif;
+  display: flex;
+  align-items: normal;
+  justify-content: center;
+}
+
+.faq-img {
+  width: 48px;
+  height: 48px;
 }
 
 .faq-item {
