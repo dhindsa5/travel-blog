@@ -101,10 +101,10 @@ header {
 .header {
     position: absolute;
     top: 0;
-    left: max(calc(50% - 720px), 0px);
+
     right: 0;
     width: 100%;
-    max-width: 1440px;
+
     height: 128px;
     margin: 0 auto;
     display: flex;
@@ -112,6 +112,15 @@ header {
     justify-content: center;
     background: #4ea487;
     margin: 0;
+}
+
+.header-inner {
+    max-width: 1440px;
+    width: 100%;
+    height: 128px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 .nav {
@@ -123,8 +132,8 @@ header {
 }
 
 .logo {
-    width: 120px;
-    height: 120px;
+    width: 72px;
+    height: 72px;
     position: absolute;
     left: 10%;
 }
@@ -154,13 +163,96 @@ ul {
     list-style: none;
 }
 
+.nav-item {
+    position: relative;
+    display: inline-block;
+}
+
+#nav-highlights,
+#nav-faq,
+#nav-contact {
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.nav-hover-highlights {
+    position: absolute;
+    left: 52%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.nav-hover-faq {
+    position: absolute;
+    left: 55%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.nav-hover-contact {
+    position: absolute;
+    left: 48%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.nav-item:hover #nav-highlights,
+.nav-item:hover #nav-faq,
+.nav-item:hover #nav-contact {
+    opacity: 0;
+}
+
+.nav-item:hover .nav-hover-highlights,
+.nav-item:hover .nav-hover-faq,
+.nav-item:hover .nav-hover-contact {
+    opacity: 1;
+}
+
+.nav_links a:focus {
+    color: #F1C953;
+}
+
+.nav_links a:nth-child(1)::after {
+    background-image: url(./assets/img/page-carousel/highlight-hover.png);
+}
+
+.nav_links a:nth-child(2)::after {
+    background-image: url(./assets/img/page-carousel/faq-hover.png);
+}
+
+.nav_links a:nth-child(3)::after {
+    background-image: url(./assets/img/page-carousel/contact-hover.png);
+}
+
+
+@media screen and (min-width: 1440px) {
+
+    .nav_links {
+        position: unset;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        position: unset;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
 @media screen and (min-width: 769px) and (max-width: 1279px) {
     html {
         margin: 0px 32px;
-    }
-
-    .nav_links a {
-        font-size: 20px;
     }
 
     .logo {
@@ -186,9 +278,16 @@ ul {
     }
 
     .logo {
-        width: 80px;
-        height: 80px;
+        width: 56px;
+        height: 56px;
         left: calc(50% - 32px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav {
+        padding-top: 0;
     }
 }
 
@@ -210,9 +309,13 @@ ul {
     }
 
     .logo {
-        width: 80px;
-        height: 80px;
+        width: 56px;
+        height: 56px;
         left: calc(50% - 32px);
+    }
+
+    .nav {
+        padding-top: 0;
     }
 }
 
@@ -263,7 +366,7 @@ footer span {
     width: 100%;
     max-width: 1440px;
     justify-content: space-between;
-    background-color: rgba(78, 164, 135, 1);
+    background-color: #4EA487;
 
     flex-direction: row;
 }
@@ -281,7 +384,7 @@ footer span {
     width: 100%;
     max-width: 1440px;
     justify-content: space-between;
-    background-color: rgba(78, 164, 135, 1);
+    background-color: #4EA487;
 
     flex-direction: row;
 }
@@ -443,6 +546,29 @@ footer span {
         height: 24px;
     }
 }
+
+@media screen and (min-width: 1440px) {
+
+    html {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    main {
+        padding-left: max(calc(50% - 720px), 0px);
+        padding-right: max(calc(50% - 720px), 0px);
+    }
+
+    .footer {
+        max-width: none;
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: 0 max(calc(50% - 600px), 0px);
+    }
+
+
+}
+
 
 /*
 -------------------------------------------------------------------
