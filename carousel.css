@@ -103,15 +103,15 @@ html {
 }
 
 .nav_links a:nth-child(1)::after {
-  background-image: url(/travel-blog/assets/img/page-carousel/highlight-hover.png);
+  background-image: url(./assets/img/page-carousel/highlight-hover.png);
 }
 
 .nav_links a:nth-child(2)::after {
-  background-image: url(/travel-blog/assets/img/page-carousel/faq-hover.png);
+  background-image: url(./assets/img/page-carousel/faq-hover.png);
 }
 
 .nav_links a:nth-child(3)::after {
-  background-image: url(/travel-blog/assets/img/page-carousel/contact-hover.png);
+  background-image: url(./assets/img/page-carousel/contact-hover.png);
 }
 
 .nav_links a:hover::after {
@@ -221,7 +221,7 @@ html {
   width: 18px;
 }
 
-.article_meta_row{
+.article_meta_row {
   display: flex;
   gap: 32px;
 }
@@ -261,11 +261,11 @@ html {
 }
 
 .slider-element {
-  width: 340px;
+  width: 300px;
   height: 440px;
   position: relative;
   border-radius: 16px;
-  margin: 0 -80px;
+  margin: 0 -70px;
   box-shadow: -9px 5px 20px 0px rgba(0, 0, 0, 0.25);
   transform: perspective(800px) rotateY(30deg) scale(0.85);
   transition: all 300ms ease-out;
@@ -434,6 +434,10 @@ input[name="beach-slider"] {
   text-decoration: underline;
 }
 
+.share_links a:hover{
+  font-weight: bold;
+}
+
 .share_checkbox:checked ~ .share_btn_label .btn_img_normal {
   opacity: 0;
 }
@@ -506,104 +510,120 @@ input[name="beach-slider"] {
   .full_content {
     padding: 80px 90px;
   }
-  .footer{
+  .footer {
     padding: 60px 90px;
   }
 }
 
 @media screen and (max-width: 1210px) {
-  .full_content{
+  .full_content {
     padding: 80px 70px;
   }
-  .footer{
+  .footer {
     padding: 60px 70px;
   }
 }
 
 @media screen and (max-width: 1170px) {
-  .full_content{
+  .full_content {
     padding: 80px 50px;
     gap: 60px;
   }
-  .footer{
+  .footer {
     padding: 60px 50px;
   }
 }
 
-@media screen and (max-width: 1130px){
-  html{
+@media screen and (max-width: 1130px) {
+  html {
     font-size: 14px;
   }
 }
 
-@media screen and (max-width: 1010px){
-
-  .full_content{
+@media screen and (max-width: 1010px) {
+  .full_content {
     padding: 70px 15px;
   }
 
-  .article_header{
+  .article_header {
     flex-direction: column;
     align-items: center;
   }
 
-  .author_info{
-    width: 500px;   
+  .author_info {
+    width: 500px;
   }
 
-  .nav{
+  .nav {
     padding-left: 15px;
   }
 
-  .footer{
+  .footer {
     padding: 30px 15px;
   }
-  .footer_links{
+  .footer_links {
     gap: 30px;
   }
 }
 
-@media screen and (max-width: 600px){
-  
-  .full_content{
+@media screen and (max-width: 600px) {
+  .full_content {
     padding-top: 24px;
   }
-  .nav_links{
+  .nav_links {
     display: none;
   }
 
-  .logo{
+  .logo {
     position: absolute;
     left: calc(50% - 60px);
   }
 
-  .footer_links{
+  .footer_links {
     flex-direction: column-reverse;
     gap: 8px;
   }
 
-  .copyright_group{
+  .copyright_group {
     align-items: center;
   }
-
 }
 
-@media screen and (max-width: 550px){
-  
-  .author_info{
+@media screen and (max-width: 550px) {
+  .author_info {
     width: fit-content;
   }
 }
 
-@media screen and (max-width: 580px){
-  .meta_info{
+@media screen and (max-width: 580px) {
+  .meta_info {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
   }
+  .sub_headline{
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 460px) {
+  html{
+    font-size: 11px;
+  }
+
+  .author_info{
+    font-size: 14px;
+  }
+
 }
 
 @media screen and (max-width: 1300px) {
+  .carousel_content{
+    width: 100%;
+    max-width: 100%;
+  }
+
   input[name="beach-slider"] {
     display: none;
   }
@@ -611,6 +631,7 @@ input[name="beach-slider"] {
   .carousel {
     position: relative;
     width: 100%;
+    max-width: 420px;
     height: 420px;
     display: flex;
     justify-content: center;
@@ -620,9 +641,9 @@ input[name="beach-slider"] {
 
   .slider-element {
     position: absolute;
-    width: 260px;
+    width: 250px;
     height: 360px;
-    margin: 0;
+    margin: 0 -70px;
     transition:
       transform 500ms ease,
       z-index 500ms ease,
@@ -630,7 +651,7 @@ input[name="beach-slider"] {
     opacity: 0;
     pointer-events: none;
 
-    transform: perspective(800px) translateX(0) scale(0.5) rotateY(0deg);
+    transform: perspective(700px) translateX(0) scale(0.5) rotateY(0deg);
     z-index: 1;
   }
 
@@ -668,13 +689,13 @@ input[name="beach-slider"] {
   }
 
   #slide-1:checked ~ .carousel .c-2 {
-    transform: perspective(800px) translateX(120px) scale(0.85) rotateY(-40deg);
+    transform: perspective(800px) translateX(240px) scale(0.85) rotateY(-40deg);
     z-index: 4;
     opacity: 1;
   }
 
   #slide-2:checked ~ .carousel .c-1 {
-    transform: perspective(800px) translateX(-120px) scale(0.85) rotateY(40deg);
+    transform: perspective(800px) translateX(-240px) scale(0.85) rotateY(40deg);
     z-index: 4;
     opacity: 1;
   }
@@ -687,13 +708,13 @@ input[name="beach-slider"] {
   }
 
   #slide-2:checked ~ .carousel .c-3 {
-    transform: perspective(800px) translateX(120px) scale(0.85) rotateY(-40deg);
+    transform: perspective(800px) translateX(240px) scale(0.85) rotateY(-40deg);
     z-index: 4;
     opacity: 1;
   }
 
   #slide-3:checked ~ .carousel .c-2 {
-    transform: perspective(800px) translateX(-120px) scale(0.85) rotateY(40deg);
+    transform: perspective(800px) translateX(-240px) scale(0.85) rotateY(40deg);
     z-index: 4;
     opacity: 1;
   }
@@ -706,13 +727,13 @@ input[name="beach-slider"] {
   }
 
   #slide-3:checked ~ .carousel .c-4 {
-    transform: perspective(800px) translateX(120px) scale(0.85) rotateY(-40deg);
+    transform: perspective(800px) translateX(240px) scale(0.85) rotateY(-40deg);
     z-index: 4;
     opacity: 1;
   }
 
   #slide-4:checked ~ .carousel .c-3 {
-    transform: perspective(800px) translateX(-120px) scale(0.85) rotateY(40deg);
+    transform: perspective(800px) translateX(-240px) scale(0.85) rotateY(40deg);
     z-index: 4;
     opacity: 1;
   }
@@ -725,13 +746,13 @@ input[name="beach-slider"] {
   }
 
   #slide-4:checked ~ .carousel .c-5 {
-    transform: perspective(800px) translateX(120px) scale(0.85) rotateY(-40deg);
+    transform: perspective(800px) translateX(240px) scale(0.85) rotateY(-40deg);
     z-index: 4;
     opacity: 1;
   }
 
   #slide-5:checked ~ .carousel .c-4 {
-    transform: perspective(800px) translateX(-120px) scale(0.85) rotateY(40deg);
+    transform: perspective(800px) translateX(-240px) scale(0.85) rotateY(40deg);
     z-index: 4;
     opacity: 1;
   }
