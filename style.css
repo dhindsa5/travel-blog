@@ -404,23 +404,27 @@ ul {
 
 .faq-title {
   margin: 0;
-  font-size: 40px;
-  line-height: 1.2;
+  font-size: 52px;
+  line-height: 120%;
   color: #111827;
   font-weight: 700;
+  width: 93px;
+  height: 49px;
+  font-family: "Arima-bold", sans-serif;
 }
 
 .faq-item {
   border: 1px solid rgba(17, 24, 39, 0.12);
   border-radius: 12px;
-  background: #ffffff;
+  background: #f1c953;
   padding: 0;
   overflow: hidden;
   margin-top: 12px;
+  height: 56px;
 }
 
 .faq-item[open] {
-  background: #ffffff;
+  background: #4ea487;
 }
 
 .faq-question {
