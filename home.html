@@ -147,17 +147,17 @@
             </div>
         </section>
 
-
-        <!-- Contact -->
+        <!-- Contact Form -->
         <section class="contact-section">
             <h2><img src="./assets/img/home/person_pin.png" alt="person icon">Contact form</h2>
 
-            <span id="contact-span">Have a question or an idea to collaborate?<br>
-                Get in touch—I’d love to hear from you and explore how we can work together.</span>
+            <span id="contact-span">
+                Have a question or an idea to collaborate?<br>
+                Get in touch—I’d love to hear from you and explore how we can work together.
+            </span>
 
             <form class="contact-form">
                 <div class="first-form-line">
-
                     <div class="form-field">
                         <label for="name">What’s your name?</label>
                         <input type="text" id="name" name="name">
@@ -173,21 +173,26 @@
                     <label for="message">How can I help?</label>
                     <textarea id="message" name="message"></textarea>
                 </div>
+
+                <div class="contact-actions">
+                    <div id="checkbox-line">
+                        <input type="checkbox" id="privacy-policy" name="privacy-policy" class="custom-check" required
+                            oninvalid="this.setCustomValidity('Please accept the privacy policy.')"
+                            onchange="this.setCustomValidity('')">
+                        <div>
+
+
+                            <span class="brown-span">I've read the </span>
+                            <a href="#" class="green-span">privacy policy</a>
+                            <span class="brown-span">and agree to the processing of my data as outlined.</span>
+                        </div>
+                    </div>
+
+                    <div id="button-position">
+                        <button class="send-button" type="submit">Send</button>
+                    </div>
+                </div>
             </form>
-
-            <div class="contact-actions">
-                <div id="checkbox-line">
-                    <input type="checkbox" id="privacy-policy" name="privacy-policy">
-                    <span class="brown-span">I've read the </span><a href="#" class="green-span">privacy policy
-                    </a><span class="brown-span">and agree to the processing of my data as outlined.</span>
-                </div>
-
-                <div id="button-position">
-                    <button class="send-button">
-                        Send
-                    </button>
-                </div>
-            </div>
         </section>
     </main>
 
