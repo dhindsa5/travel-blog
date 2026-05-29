@@ -349,6 +349,7 @@ input[name="beach-slider"] {
 .share_content p {
   font-size: 1.5rem;
   font-family: "Arima";
+  font-weight: 500;
   line-height: 120%;
   color: rgba(84, 55, 13, 1);
 }
@@ -402,11 +403,22 @@ input[name="beach-slider"] {
     margin 300ms ease;
 }
 
-.swing_arrow {
+.swing_arrow_1 {
   position: absolute;
   top: 50px;
   left: 5px;
   pointer-events: none;
+
+  display: block;
+}
+
+.swing_arrow_2 {
+  position: absolute;
+  top: 50px;
+  left: 5px;
+  pointer-events: none;
+
+  display: none;
 }
 
 .share_links {
@@ -449,6 +461,7 @@ input[name="beach-slider"] {
   max-width: 50px;
   opacity: 1;
   visibility: visible;
+  object-fit: contain;
 }
 
 .share_checkbox:checked ~ .share_links {
@@ -486,6 +499,10 @@ input[name="beach-slider"] {
 .footer_links a {
   text-decoration: none;
   color: white;
+}
+
+.footer_links a:hover{
+  color: rgba(241, 201, 83, 1);
 }
 
 .socialmedia_links {
@@ -587,6 +604,15 @@ input[name="beach-slider"] {
   .copyright_group {
     align-items: center;
   }
+
+  .socialmedia_links{
+    align-items: end;
+  }
+
+  .socialmedia_links img{
+    width: 24px;
+    height: 24px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -612,8 +638,42 @@ input[name="beach-slider"] {
     font-size: 11px;
   }
 
+  .full_content{
+    gap: 50px;
+  }
+
   .author_info{
     font-size: 14px;
+  }
+
+  .list_text ol{
+    padding-inline-start: 20px;
+  }
+
+  .tipps_content{
+    margin-top: 60px;
+  }
+
+  .tipps_list{
+    margin: 0;
+    padding: 24px 16px 24px 0;
+  }
+
+  .tipps_box{
+    top: -85px;
+    left: 0;
+  }
+
+  .share_content p{
+    font-size: 1.6rem;
+  }
+
+  .swing_arrow_1{
+    display: none;
+  }
+
+  .swing_arrow_2{
+    display: block;
   }
 
 }
