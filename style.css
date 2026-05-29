@@ -319,9 +319,255 @@ ul {
     }
 }
 
-/*
+/* Home Animation
 -------------------------------------------------------------------
 */
+/* --- HAUPTCONTAINER --- */
+.home-animation {
+  position: relative;
+  width: 100%;
+  height: 530px;
+  background-color: #f3c954;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.home-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* --- TEXT --- */
+.headline-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 5;
+
+  opacity: 0;
+  animation: textSequence 7s ease-in-out forwards;
+}
+
+.headline-animation h1 {
+  font-size: 55px;
+  font-family: serif;
+  color: #433321;
+}
+
+.headline-animation p {
+  font-size: 22px;
+  line-height: 1.3;
+  font-family: sans-serif;
+  color: #433321;
+}
+
+.headline-animation h1 {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.headline-animation p {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.7s;
+}
+
+/* --- HINTERGRUNDBILD --- */
+.animation-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 68%;
+  overflow: hidden;
+  z-index: 1;
+
+  opacity: 0;
+  transform: translateX(100%);
+
+  animation: bgSequence 7s ease-in-out forwards;
+}
+
+.animation-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- LOGO --- */
+.circle {
+  position: absolute;
+  bottom: -40px;
+  left: 35%;
+  width: 130px;
+  height: 130px;
+  z-index: 10;
+
+  opacity: 0;
+  transform: scale(0.5);
+
+  animation: logoSequence 8s ease-in-out forwards;
+}
+
+.circle img {
+  position: absolute;
+}
+
+.circle img:nth-child(1) {
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 100%;
+  object-fit: contain;
+  animation: spinText 8s linear infinite;
+}
+
+.circle img:nth-child(2) {
+  top: -4%;
+  left: -6%;
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+}
+
+.circle img:nth-child(3) {
+  top: 30%;
+  left: 30%;
+  width: 40%;
+  height: 40%;
+  object-fit: contain;
+}
+
+/* =========================================
+   KEYFRAMES 
+========================================= */
+
+/* Text: Einblenden */
+@keyframes textSequence {
+  0% {
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  10% {
+    opacity: 1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  30% {
+    opacity: 1;
+    left: 22%;
+    transform: translate(-50%, -50%);
+  } /* Position Bild 1 */
+
+  100% {
+    opacity: 1;
+    left: 22%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Bild: Reinfahren */
+@keyframes bgSequence {
+  /* START */
+  10% {
+    opacity: 0;
+    width: 55%;
+    transform: translateX(100%);
+
+    clip-path: path(
+      "M 250 0 Q 100 0 110 150 Q 160 500 0 530 L 1200 530 L 1200 0 Z"
+    );
+  }
+
+  /* Bild fährt rein */
+  30% {
+    opacity: 1;
+    width: 55%;
+    transform: translateX(0);
+
+    clip-path: path(
+      "M 250 0 Q 100 0 110 150 Q 160 500 0 530 L 1200 530 L 1200 0 Z"
+    );
+  }
+
+  /* Pause */
+  40% {
+    opacity: 1;
+    width: 55%;
+    transform: translateX(0);
+
+    clip-path: path(
+      "M 250 0 Q 100 0 110 150 Q 160 500 0 530 L 1200 530 L 1200 0 Z"
+    );
+  }
+
+  /* Zweite Form */
+  55% {
+    opacity: 1;
+    width: 68%;
+    transform: translateX(0);
+
+    clip-path: path(
+      "M 220 0 Q 20 60 90 280 Q 140 430 0 530 L 1200 530 L 1200 0 Z"
+    );
+  }
+
+  /* ENDE */
+  100% {
+    opacity: 1;
+    width: 68%;
+    transform: translateX(0);
+
+    clip-path: path(
+      "M 220 0 Q 20 60 90 280 Q 140 430 0 530 L 1200 530 L 1200 0 Z"
+    );
+  }
+}
+
+/* Logo: Bleibt während der Pause unsichtbar und ploppt erst am Ende auf (ab 50%) */
+@keyframes logoSequence {
+  0%,
+  50% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  65%,
+  100% {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+}
+
+/* Endlos-Rotation für den äußeren Text im Logo */
+@keyframes spinText {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation für den Text */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 /* Highlights
 -------------------------------------------------------------------
