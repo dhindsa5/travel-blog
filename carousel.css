@@ -242,6 +242,7 @@ html {
   font-weight: 600;
   font-size: 2rem;
   line-height: 120%;
+  text-align: center;
   color: rgba(84, 55, 13, 1);
 }
 
@@ -595,13 +596,13 @@ input[name="beach-slider"] {
     display: none;
   }
 
-  .logo {
-    position: absolute;
-    left: calc(50% - 60px);
+  .header{
+    justify-content: center;
   }
 
   .footer_links {
     flex-direction: column-reverse;
+    align-items: baseline;
     gap: 8px;
   }
 
