@@ -11,7 +11,7 @@
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <a href="#home"><img src="assets/img/page-video/logo.png" alt="Travel Blog Logo" class="logo"></a>
+                <a href="home.html"><img src="assets/img/page-video/logo.png" alt="Travel Blog Logo" class="logo"></a>
                 <div class="nav-links">
                     <a href="#highlights">Highlights</a>
                     <a href="#faq">FAQ</a>
@@ -75,11 +75,22 @@
             </section>
             <section class="cta-section">
                 <p class="cta-text">Follow me for more content like this, and share the article with your friends!</p>
-                <img src="assets/img/page-graph/Vector 12.png" alt="Vector 12" class="cta-vector">
-                <button class="share-btn">
-                    <span class="share-icon"></span>
-                    <span class="share-label">Share</span>
-                </button>
+                   <div class="share_action_area">
+                <input type="checkbox" id="share-toggle" class="share_checkbox" />
+                <label for="share-toggle" class="share_btn_label">
+                    <div class="btn_wrapper">
+                    <img class="btn_img_normal" src="./assets/img/page-carousel/Share button.png" alt="share-initial" />
+                    <img class="btn_img_clicked_1" src="./assets/img/page-carousel/share-click.png" alt="share-clicked"/>
+                    <img class="btn_img_clicked_2" src="./assets/img/page-carousel/share.png" alt="share-clicked"/>
+                    </div>
+                </label>
+                <img class="swing_arrow_1" src="./assets/img/page-carousel/Vector 12.png" alt="swing-arrow"/>
+                <img class="swing_arrow_2" src="./assets/img/page-carousel/Vector 13.png" alt="swing-arrow"/>
+                <div class="share_links">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">WhatsApp</a>
+                </div>
+            </div>
             </section>
         </div>
     </main>
