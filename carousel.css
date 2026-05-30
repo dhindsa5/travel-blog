@@ -76,6 +76,11 @@ html {
   gap: 72px;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 .nav_links a {
   font-family: "Arima";
   font-weight: 700;
@@ -596,8 +601,18 @@ input[name="beach-slider"] {
     display: none;
   }
 
-  .header{
+  .header {
     justify-content: center;
+    height: 70px;
+  }
+
+  .nav{
+    padding-left: 0;
+  }
+
+  .logo {
+        width: 70px;
+        height: 70px;
   }
 
   .footer_links {
