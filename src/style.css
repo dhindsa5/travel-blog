@@ -134,7 +134,7 @@ ul {
 .nav_links a::after {
   content: "";
   position: absolute;
-  bottom: 5px;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% + 20px);
@@ -151,16 +151,16 @@ ul {
   color: rgba(241, 201, 83, 1);
 }
 
-.nav_links a:nth-child(1)::after {
-  background-image: url(./assets/img/page-carousel/highlight-hover.png);
+.nav_links a[href="/src/home.html#highlights"]::after {
+  background-image: url(../assets/img/page-carousel/highlight-hover.png);
 }
 
-.nav_links a:nth-child(2)::after {
-  background-image: url(./assets/img/page-carousel/faq-hover.png);
+.nav_links a[href="/src/home.html#faq-section"]::after {
+  background-image: url(../assets/img/page-carousel/faq-hover.png);
 }
 
-.nav_links a:nth-child(3)::after {
-  background-image: url(./assets/img/page-carousel/contact-hover.png);
+.nav_links a[href="/src/home.html#contact-section"]::after {
+  background-image: url(../assets/img/page-carousel/contact-hover.png);
 }
 
 .nav_links a:hover::after {

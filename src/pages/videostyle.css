@@ -143,15 +143,15 @@ body{
   opacity: 1;
 }
 
-.nav-links a[href="#highlights"]::after {
+.nav-links a[href="/src/home.html#highlights"]::after {
   background-image: url('../../assets/img/page-carousel/highlight-hover.png');
 }
 
-.nav-links a[href="#faq"]::after {
+.nav-links a[href="/src/home.html#faq-section"]::after {
   background-image: url('../../assets/img/page-carousel/faq-hover.png');
 }
 
-.nav-links a[href="#contact"]::after {
+.nav-links a[href="/src/home.html#contact-section"]::after {
   background-image: url('../../assets/img/page-carousel/contact-hover.png');
 }
 
