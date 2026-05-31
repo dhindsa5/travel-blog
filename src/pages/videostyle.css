@@ -144,15 +144,15 @@ body{
 }
 
 .nav-links a[href="#highlights"]::after {
-  background-image: url('./assets/img/page-carousel/highlight-hover.png');
+  background-image: url('../../assets/img/page-carousel/highlight-hover.png');
 }
 
 .nav-links a[href="#faq"]::after {
-  background-image: url('./assets/img/page-carousel/faq-hover.png');
+  background-image: url('../../assets/img/page-carousel/faq-hover.png');
 }
 
 .nav-links a[href="#contact"]::after {
-  background-image: url('./assets/img/page-carousel/contact-hover.png');
+  background-image: url('../../assets/img/page-carousel/contact-hover.png');
 }
 
 .nav-links a:active {
