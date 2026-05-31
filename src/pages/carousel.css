@@ -46,6 +46,10 @@ html {
   gap: 88px;
 }
 
+.mobile-nav{
+  display: none;
+}
+
 .header {
   width: 100%;
   height: 128px;
@@ -565,6 +569,14 @@ input[name="beach-slider"] {
   html {
     font-size: 14px;
   }
+
+  .author_details{
+    font-size: 16px;
+  }
+
+  .footer{
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 1010px) {
@@ -589,7 +601,7 @@ input[name="beach-slider"] {
     padding: 30px 15px;
   }
   .footer_links {
-    gap: 30px;
+    gap: 20px;
   }
 }
 
@@ -599,6 +611,10 @@ input[name="beach-slider"] {
   }
   .nav_links {
     display: none;
+  }
+
+  .home_link{
+    padding: 0px;
   }
 
   .header {
@@ -613,6 +629,11 @@ input[name="beach-slider"] {
   .logo {
         width: 70px;
         height: 70px;
+  }
+
+  .footer{
+    margin-top: 60px;
+    margin-bottom: 80px;
   }
 
   .footer_links {
@@ -633,11 +654,25 @@ input[name="beach-slider"] {
     width: 24px;
     height: 24px;
   }
+
+  .mobile-nav {
+    position: fixed;
+    bottom: 0;
+        display: flex;
+        width: 100%;
+        height: 88px;
+        background: #F1C953;
+        justify-content: center;
+        align-items: center;
+        gap: 64px;
+        z-index: 100;
+        padding: 24px 25px;
+    }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 520px) {
   .author_info {
-    width: fit-content;
+    width: 100%;
   }
 }
 
@@ -663,7 +698,7 @@ input[name="beach-slider"] {
   }
 
   .author_info{
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .list_text ol{
