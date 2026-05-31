@@ -8,6 +8,10 @@
         padding-left: max(calc(50% - 720px), 0px);
         padding-right: max(calc(50% - 720px), 0px);
     }
+
+    article header {
+        margin-top: 176px;
+    }
 }
 
 article-direction-column {
@@ -619,11 +623,22 @@ footer>img {
         margin 300ms ease;
 }
 
-.swing_arrow {
-    position: absolute;
-    top: 50px;
-    left: 5px;
-    pointer-events: none;
+.swing_arrow_1 {
+  position: absolute;
+  top: 50px;
+  left: 5px;
+  pointer-events: none;
+
+  display: block;
+}
+
+.swing_arrow_2 {
+  position: absolute;
+  top: 60px;
+  left: 35px;
+  pointer-events: none;
+
+  display: none;
 }
 
 .share_links {
@@ -945,6 +960,10 @@ footer span {
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
+    article header {
+        margin-top: 176px;
+    }
+    
     .beach-activities-section figcaption {
         font-size: 20px;
         width: 480px;
@@ -988,6 +1007,10 @@ footer span {
 
     article {
         margin-top: 0;
+    }
+
+    article header {
+        margin-top: 176px;
     }
 
     .article-meta {
@@ -1528,6 +1551,14 @@ footer span {
         width: 24px;
         height: 24px;
     }
+
+    .swing_arrow_1{
+    display: none;
+  }
+
+  .swing_arrow_2{
+    display: block;
+  }
 
     main {
         margin-top: 0;
