@@ -324,7 +324,7 @@ body{
 .video-container{
     width:931px;
     height:520px;
-    background:url('./assets/img/page-video/Video\ copy.png') no-repeat center/cover;
+    background:url('../../assets/img/page-video/Video\ copy.png') no-repeat center/cover;
     border-radius:53px;
     display:flex;
     justify-content:center;
