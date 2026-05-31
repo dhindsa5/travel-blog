@@ -4,7 +4,7 @@
         border: 0px;
     }
 
-    article {
+    html {
         padding-left: max(calc(50% - 720px), 0px);
         padding-right: max(calc(50% - 720px), 0px);
     }
@@ -133,8 +133,8 @@ ul {
 
 .nav-hover-highlights {
     position: absolute;
-    left: 52%;
-    top: 58%;
+    left: 53%;
+    top: 62%;
     transform: translate(-50%, -50%);
     opacity: 0;
     pointer-events: none;
@@ -144,7 +144,7 @@ ul {
 .nav-hover-faq {
     position: absolute;
     left: 55%;
-    top: 55%;
+    top: 60%;
     transform: translate(-50%, -50%);
     opacity: 0;
     pointer-events: none;
@@ -153,8 +153,8 @@ ul {
 
 .nav-hover-contact {
     position: absolute;
-    left: 48%;
-    top: 55%;
+    left: 50%;
+    top: 58%;
     transform: translate(-50%, -50%);
     opacity: 0;
     pointer-events: none;
@@ -695,92 +695,34 @@ footer>img {
 }
 
 
-/*  Footer
+/* Footer
 -------------------------------------------------------------------
 */
 
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    position: relative;
-}
-
-footer p {
-    color: #54370D;
-    font-size: 24px;
-    line-height: 120%;
-    font-family: Arima, sans-serif;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-footer span {
-    color: #F1C953;
-    font-size: 24px;
-    line-height: 120%;
-    font-family: Arima, sans-serif;
-    font-weight: 700;
-    letter-spacing: 5%;
-}
-
-.mobile-footer {
-    height: 150px;
-    padding: 0px 120px;
-    display: flex;
-    left: max(calc(50% - 720px), 0px);
-    right: max(calc(50% - 720px), 0px);
-    width: 100%;
-    max-width: 1440px;
-    justify-content: space-between;
-    background-color: #4EA487;
-
-    flex-direction: row;
-}
-
-.mobile-footer {
-    display: none;
-}
-
 .footer {
-    height: 150px;
-    padding: 0px 120px;
-    display: flex;
-    left: max(calc(50% - 720px), 0px);
-    right: max(calc(50% - 720px), 0px);
+    display: none; /* mobile-first, Desktop-Footer per Media Query ein */
+    width: 100%;
+    background-color: #4EA487;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.footer-inner {
     width: 100%;
     max-width: 1440px;
-    justify-content: space-between;
-    background-color: #4EA487;
-
-    flex-direction: row;
-}
-
-.copyright_group span {
-    color: #FFFFFF;
-    font-size: 18px;
-    line-height: 120%;
-    font-family: Palanquin-Regular, sans-serif;
-    font-weight: 400;
-    letter-spacing: 0;
-}
-
-.copyright_group {
-    font-size: 18px;
-    color: white;
+    min-height: 150px;
     display: flex;
-    gap: 4px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 64px;
+    box-sizing: border-box;
 }
 
 .footer_links {
-    width: 100%;
     display: flex;
     gap: 72px;
     align-items: center;
-
 }
 
 .footer_links img {
@@ -796,160 +738,131 @@ footer span {
     color: rgba(241, 201, 83, 1);
 }
 
+.copyright_group {
+    font-size: 18px;
+    color: white;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.copyright_group span {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 120%;
+    font-family: Palanquin-Regular, sans-serif;
+    font-weight: 400;
+}
+.copyright_group a {
+    font-size: 16px;
+    font-family: Palanquin-Regular, sans-serif;
+    font-weight: 400;
+    line-height: 120%;
+}
+
 .socialmedia_rechts {
     display: flex;
     gap: 16px;
     align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1279px) {
-    .footer {
-        left: -32px;
-        width: calc(100% + 64px);
-    }
-
-    .footer_links {
-        margin-left: -80px;
-        gap: 48px;
-        font-size: 16px;
-    }
-
-    .socialmedia_rechts {
-        margin-right: -80px;
-    }
-}
-
+/* Mobile Footer (481–768) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .footer {
-        display: none;
-    }
+    .footer { display: none; }
 
     .mobile-footer {
         height: 136px;
         display: flex;
-        padding: 0;
-        left: -32px;
-        width: calc(100% + 48px);
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        padding: 0 32px;
+        box-sizing: border-box;
+        background-color: #4EA487;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
     }
 
     .footer_links {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        flex-direction: column;
         gap: 2px;
-        padding-left: 32px;
     }
 
     .socialmedia_rechts {
-        padding-right: 32px;
         padding-top: 60px;
     }
-
-    #tiktok-icon {
-        width: 24px;
-        height: 24px;
-    }
-
-    #youtube-icon {
-        width: 32px;
-        height: 24px;
-    }
-
-    #facebook-icon {
-        width: 24px;
-        height: 24px;
-    }
-
-    #instagram-icon {
-        width: 24px;
-        height: 24px;
-    }
 }
 
+/* Mobile Footer (320–480) */
 @media screen and (min-width: 320px) and (max-width: 480px) {
-    .footer {
-        display: none;
-    }
+    .footer { display: none; }
 
     .mobile-footer {
         height: 136px;
         display: flex;
-        padding: 0;
-        left: -32px;
-        width: calc(100% + 48px);
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        padding: 0 16px;
+        box-sizing: border-box;
+        background-color: #4EA487;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
     }
 
     .footer_links {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        flex-direction: column;
         gap: 2px;
-        padding-left: 32px;
-        margin-right: -32px;
     }
 
     .socialmedia_rechts {
-        padding-right: 16px;
         padding-top: 60px;
         gap: 8px;
     }
+}
 
-    #tiktok-icon {
-        width: 24px;
-        height: 24px;
+/* 769–1279 (Tablet/kleiner Desktop) */
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    .footer {
+        display: flex;
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
     }
 
-    #youtube-icon {
-        width: 32px;
-        height: 24px;
+    .footer-inner {
+        padding: 0 48px;
     }
 
-    #facebook-icon {
-        width: 24px;
-        height: 24px;
-    }
-
-    #instagram-icon {
-        width: 24px;
-        height: 24px;
+    .footer_links {
+        gap: 48px;
+        font-size: 16px;
     }
 }
 
+/* 1280px+ Desktop: grüner Balken volle Breite, Inhalt max 1440px */
 @media screen and (min-width: 1280px) {
-
-    html {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    article {
-        padding-left: max(calc(50% - 720px), 0px);
-        padding-right: max(calc(50% - 720px), 0px);
-        margin: 0 48px;
-    }
-
     .footer {
-        max-width: none;
-        width: 100%;
-        left: 0;
-        right: 0;
-        padding: 0 max(calc(50% - 600px), 0px);
+        display: flex;
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
     }
 
-    main {
-        padding-left: 0;
-        padding-right: 0;
+    .footer-inner {
+        padding: 0 120px;
     }
-
-    html {
+    .footer_links{
         margin: 0;
     }
-
 }
-
-
 /*
 -------------------------------------------------------------------
 */
@@ -1088,7 +1001,7 @@ footer span {
 
     .footer {
         left: -32px;
-        width: calc(100% + 64px);
+        width: calc(100% + 96px);
     }
 
     .footer_links {
@@ -1277,7 +1190,7 @@ footer span {
         display: flex;
         padding: 0;
         left: -32px;
-        width: calc(100% + 48px);
+        width: calc(100% + 64px);
         margin-bottom: 88px;
     }
 
@@ -1286,13 +1199,15 @@ footer span {
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
-        gap: 2px;
+        margin-left: 8px;
+        gap: 8px;
         padding-left: 32px;
     }
 
     .socialmedia_rechts {
         padding-right: 32px;
         padding-top: 60px;
+        margin-bottom: 64px;
     }
 
     #tiktok-icon {
@@ -1556,10 +1471,11 @@ footer span {
     }
 
     .socialmedia_rechts {
-        padding-right: 16px;
-        padding-top: 60px;
-        gap: 8px;
-    }
+    padding-right: 16px;
+    padding-top: 0;
+    gap: 8px;
+    align-self: center;
+}
 
     #tiktok-icon {
         width: 24px;

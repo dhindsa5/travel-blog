@@ -5,28 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Graph</title>
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../src/style.css">
     <link rel="stylesheet" href="./graph.css">
 </head>
 
 <body>
     <main>
-        <header class="header">
+        <header class="header" id="landing">
             <div class="header-inner">
                 <nav class="nav">
                     <img src="../../assets/img/header/logo 03 1.png" alt="Travel Blog Logo" class="logo">
                     <ul class="nav_links">
                         <li class="nav-item">
-                            <a id="nav-highlights" href="#highlights">Highlights</a>
+                            <a id="nav-highlights" href="../../src/home.html#highlights">Highlights</a>
                             <img src="../../assets/img/header/highlights-hover.svg" alt="hightlights underlined"
                                 class="nav-hover-highlights">
                         </li>
                         <li class="nav-item">
-                            <a id="nav-faq" href="#faq">FAQ</a>
+                            <a id="nav-faq" href="../../src/home.html#faq-section">FAQ</a>
                             <img src="../../assets/img/header/faq-hover.svg" alt="faq underlined" class="nav-hover-faq">
                         </li>
                         <li class="nav-item">
-                            <a id="nav-contact" href="#contact">Contact</a>
+                            <a id="nav-contact" href="../../src/home.html#contact-section">Contact</a>
                             <img src="../../assets/img/header/contact-hover.svg" alt="contact underlined"
                                 class="nav-hover-contact">
                         </li>
@@ -63,7 +63,8 @@
                             </div>
                             <div class="article-meta-row">
                                 <div class="meta-div">
-                                    <img src="../../assets/img/page-graph/visibility.svg" alt="eye icon" class="meta-icon">
+                                    <img src="../../assets/img/page-graph/visibility.svg" alt="eye icon"
+                                        class="meta-icon">
                                     <span>Read: 47</span>
                                 </div>
                                 <div class="meta-div">
@@ -175,33 +176,38 @@
                                 alt="share-clicked" />
                         </div>
                     </label>
-                    <img class="swing_arrow_1" src="../../assets/img/page-carousel/Vector 12.png" alt="swing-arrow"/>
-                <img class="swing_arrow_2" src="../../assets/img/page-carousel/Vector 13.png" alt="swing-arrow"/>
-                <div class="share_links">
-                    <a href="#">LinkedIn</a>
-                    <a href="#">WhatsApp</a>
-                </div>
+                    <img class="swing_arrow_1" src="../../assets/img/page-carousel/Vector 12.png" alt="swing-arrow" />
+                    <img class="swing_arrow_2" src="../../assets/img/page-carousel/Vector 13.png" alt="swing-arrow" />
+                    <div class="share_links">
+                        <a href="https://de.linkedin.com/?mcid=6935667189886640128&src=go-pa&trk=sem-ga_campid.17342682713_asid.148803897556_crid.730830873565_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.9042731&cid=&gclsrc=aw.ds&gad_source=1&gad_campaignid=17342682713&gbraid=0AAAAAojDCNTV42cSlA31E9emXnNl9fsF-&gclid=EAIaIQobChMIldKE9sLklAMVuMpEBx0jzRs5EAAYASAAEgLwMvD_BwE" target="_blank">LinkedIn</a>
+                        <a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
+                    </div>
                 </div>
 
             </section>
         </article>
         <footer class="footer">
-            <div class="footer_links">
-                <div class="copyright_group">
-                    <img src="../../assets/img/footer/copyright.png" alt="Copyright">
-                    <span>Travel Blog 2026</span>
+            <div class="footer-inner">
+                <div class="footer_links">
+                    <div class="copyright_group">
+                        <img src="../../assets/img/footer/copyright.png" alt="Copyright">
+                        <span>Travel Blog 2026</span>
+                    </div>
+                    <a href="../../src/legal/impressum.html" target="_blank">Imprint</a>
+                    <a href="../../src/legal/cookie-preferences.html" target="_blank">Cookie Preferences</a>
                 </div>
-                <a href="#">Imprint</a>
-                <a href="#">Cookie Preferences</a>
+                <ul class="socialmedia_rechts">
+                    <li><a href="https://www.tiktok.com/de-DE" target="_blank"><img
+                                src="../../assets/img/footer/Tiktok_icon 1.png" alt="TikTok" class="social-icon"></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><img src="../../assets/img/footer/youtube.png"
+                                alt="YouTube" class="social-icon"></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank"><img src="../../assets/img/footer/facebook.png"
+                                alt="Facebook" class="social-icon"></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><img
+                                src="../../assets/img/footer/Instagram_logo_2016 1.png" alt="Instagram"
+                                class="social-icon"></a></li>
+                </ul>
             </div>
-            <ul class="socialmedia_rechts">
-                <li><a href="#"><img src="../../assets/img/footer/Tiktok_icon 1.png" alt="TikTok" class="social-icon"></a>
-                </li>
-                <li><a href="#"><img src="../../assets/img/footer/youtube.png" alt="YouTube" class="social-icon"></a></li>
-                <li><a href="#"><img src="../../assets/img/footer/facebook.png" alt="Facebook" class="social-icon"></a></li>
-                <li><a href="#"><img src="../../assets/img/footer/Instagram_logo_2016 1.png" alt="Instagram"
-                            class="social-icon"></a></li>
-            </ul>
         </footer>
         <footer class="mobile-footer">
             <div class="footer_links">
@@ -213,24 +219,28 @@
                 </div>
             </div>
             <ul class="socialmedia_rechts">
-                <li><a href="#"><img src="../../assets/img/footer/Tiktok_icon 1.png" alt="TikTok" class="social-icon"
+                <li><a href="https://www.tiktok.com/de-DE/" target="_blank"><img
+                            src="../../assets/img/footer/Tiktok_icon 1.png" alt="TikTok" class="social-icon"
                             id="tiktok-icon"></a>
                 </li>
-                <li><a href="#"><img src="../../assets/img/footer/youtube.png" alt="YouTube" class="social-icon"
-                            id="youtube-icon"></a></li>
-                <li><a href="#"><img src="../../assets/img/footer/facebook.png" alt="Facebook" class="social-icon"
-                            id="facebook-icon"></a></li>
-                <li><a href="#"><img src="../../assets/img/footer/Instagram_logo_2016 1.png" alt="Instagram"
-                            class="social-icon" id="instagram-icon"></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><img src="../../assets/img/footer/youtube.png"
+                            alt="YouTube" class="social-icon" id="youtube-icon"></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="../../assets/img/footer/facebook.png"
+                            alt="Facebook" class="social-icon" id="facebook-icon"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img
+                            src="../../assets/img/footer/Instagram_logo_2016 1.png" alt="Instagram" class="social-icon"
+                            id="instagram-icon"></a></li>
             </ul>
         </footer>
 
         <nav class="mobile-nav">
-        <a href="#home" class="mobile-nav-item"><img src="../../assets/img/home/home.png" alt="Home"></a>
-        <a href="#rocket" class="mobile-nav-item"><img src="../../assets/img/home/rocket_launch_menubar.png" alt="Rocket"></a>
-        <a href="#help" class="mobile-nav-item"><img src="../../assets/img/home/live_help_menubar.png" alt="Help"></a>
-        <a href="#profile" class="mobile-nav-item"><img src="../../assets/img/home/person_pin_menubar.png" alt="Profile"></a>
-    </nav>
+            <a href="#landing" class="mobile-nav-item"><img src="../../assets/img/home/home.png" alt="Home"></a>
+            <a href="#" class="mobile-nav-item"><img src="../../assets/img/home/rocket_launch_menubar.png"
+                    alt="Rocket"></a>
+            <a href="#" class="mobile-nav-item"><img src="../../assets/img/home/live_help_menubar.png" alt="Help"></a>
+            <a href="#" class="mobile-nav-item"><img src="../../assets/img/home/person_pin_menubar.png"
+                    alt="Profile"></a>
+        </nav>
     </main>
 </body>
 
