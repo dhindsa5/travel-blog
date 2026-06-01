@@ -755,7 +755,7 @@ body{
         width: 100%;
         height: 88px;
         background: #F1C953;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         gap: 48px;
         z-index: 100;
@@ -914,7 +914,7 @@ body{
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 375px) {
     body {
         width: 375px;
         margin: 0 auto;
@@ -923,7 +923,7 @@ body{
         height: 70px;
         width: 100%;
         left: 0;
-
+        position: unset;
     }
     .logo {
         width: 86px;
@@ -944,7 +944,7 @@ body{
         display: none;
     }
     .full-content {
-        margin-top: 94px;
+        margin-top: 24px;
     }
     .article-header {
         gap: 24px;
