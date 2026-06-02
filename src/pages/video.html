@@ -48,8 +48,16 @@
                 </div>
             </section>
             <p class="intro-text">Discover Copenhagen, where historic charm meets modern design, vibrant cycling culture and waterfront living. Experience the heart of Scandinavia through cozy cafés, innovative cuisine, and effortlessly cool city life.</p>
-            <div class="video-container">
+            <div class="video-container" id="video-container">
+                <img src="../../assets/img/page-video/play_circle.png" alt="Play Video" class="play-button" id="play-button">
             </div>
+            <script>
+                document.getElementById('play-button').addEventListener('click', function() {
+                    const container = document.getElementById('video-container');
+                    container.innerHTML = '<iframe src="https://www.youtube.com/embed/5QLzefF2kZQ?autoplay=1&mute=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                    container.style.background = 'none';
+                });
+            </script>
             <div class="main-text">
                 <p>Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper. Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Eta scelerisque turpis gravida semper. Lorem ipsum dolor sit ameta enim vestibulum malesuada. Antenes intrew commodo porta scelerisque turpis. ipsum dolor sit ametert consectetur. Egestas a enim vestibulum malesuada. Ante in comm odo porta scelerisque turpis gravida semper.</p>
                 <div class="list-section">

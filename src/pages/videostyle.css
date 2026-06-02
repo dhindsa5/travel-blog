@@ -329,6 +329,27 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+    position: relative;
+    overflow: hidden;
+}
+
+.play-button {
+    cursor: pointer;
+    width: 190px;
+    height: 190px;
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+.play-button:hover {
+    transform: scale(1.1);
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 53px;
 }
 
 .main-text{
@@ -706,6 +727,11 @@ body{
         height: auto;
         aspect-ratio: 16 / 9;
     }
+
+    .play-button {
+        width: 20% !important;
+        height: auto !important;
+    }
     .cta-vector {
         left: -2px;
     }
@@ -794,6 +820,10 @@ body{
     }
     .content {
         gap: 40px;
+    }
+    .play-button {
+        width: 70px;
+        height: 70px;
     }
     .cta-section {
         left: -10px;
