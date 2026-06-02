@@ -42,7 +42,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 120px;
+  padding: 80px max(15px, calc(50% - 600px));
   gap: 88px;
 }
 
@@ -504,6 +504,7 @@ input[name="beach-slider"] {
   display: flex;
   gap: 72px;
   align-items: center;
+  flex-direction: row-reverse;
 }
 
 .footer_links img {
@@ -537,31 +538,10 @@ input[name="beach-slider"] {
   }
 }
 
-@media screen and (max-width: 1270px) {
-  .full_content {
-    padding: 80px 90px;
-  }
-  .footer {
-    padding: 60px 90px;
-  }
-}
-
-@media screen and (max-width: 1210px) {
-  .full_content {
-    padding: 80px 70px;
-  }
-  .footer {
-    padding: 60px 70px;
-  }
-}
 
 @media screen and (max-width: 1170px) {
   .full_content {
-    padding: 80px 50px;
     gap: 60px;
-  }
-  .footer {
-    padding: 60px 50px;
   }
 }
 
@@ -598,7 +578,7 @@ input[name="beach-slider"] {
   }
 
   .footer {
-    padding: 30px 15px;
+    padding: 60px 15px;
   }
   .footer_links {
     gap: 20px;
@@ -634,11 +614,14 @@ input[name="beach-slider"] {
   .footer{
     margin-top: 60px;
     margin-bottom: 80px;
+
+    padding: 30px 15px;
   }
 
   .footer_links {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: baseline;
+    line-height: 120%;
     gap: 8px;
   }
 
@@ -656,17 +639,34 @@ input[name="beach-slider"] {
   }
 
   .mobile-nav {
-    position: fixed;
-    bottom: 0;
         display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
         width: 100%;
         height: 88px;
         background: #F1C953;
         justify-content: center;
         align-items: center;
-        gap: 64px;
+        gap: 48px;
         z-index: 100;
         padding: 24px 25px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    
+    .mobile-nav-item {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile-nav-item img {
+        width: 31px;
+        height: 34px;
     }
 }
 
@@ -729,6 +729,10 @@ input[name="beach-slider"] {
 
   .swing_arrow_2{
     display: block;
+  }
+
+  .copyright_group{
+    font-size: 16px;
   }
 
 }
