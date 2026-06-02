@@ -1228,3 +1228,102 @@ ul {
         height: 34px;
     }
 }
+
+
+/* =========================================================================
+   MOBILE ANSICHTEN 
+   ========================================================================= */
+@media screen and (max-width: 480px) {
+    
+
+    .headline-animation {
+        display: flex;
+        top: 30%;
+        width: 200px; 
+        gap: 12px;
+        animation: textSequenceMobile 2s ease-in forwards;
+    }
+
+    .headline-animation h1 {
+        font-size: 2.2rem; 
+    }
+
+    .headline-animation p {
+        font-size: 1.15rem; 
+    }
+
+    
+    .animation-bg {
+        width: 100%; 
+        animation: bgSequenceMobile 7s ease-in-out forwards;
+    }
+
+   
+    .circle {
+        left: 80px; 
+        bottom: 230px;
+        animation: logoSequenceMobile 4s ease-in-out forwards;
+    }
+
+    .animation-bg img{
+        width: 160%;
+        height: 120%;
+    }
+
+
+
+    /* -----------------------------------------------------------------
+       MOBILE KEYFRAMES
+       ----------------------------------------------------------------- */
+
+    @keyframes textSequenceMobile {
+       
+        0%, 90% {
+            opacity: 1;
+            left: 15px;
+             
+        }
+        100%{
+            opacity: 0;
+            left: 15px;
+        }
+    }
+
+    /* Bild-Morphing & Wellen-Schnitt (clip-path) für max. 380px */
+    @keyframes bgSequenceMobile {
+        20% {
+            opacity: 0;
+            transform: translateY(100%);
+            clip-path: path(
+                "M 0 340 C 90 310, 280 380, 380 330 L 380 530 L 0 530 Z"
+            );
+        }
+
+        40% {
+            opacity: 1;
+            transform: translateY(0);
+            clip-path: path(
+                "M -250 499 C 812 621, -50 100, 450 -14 L 800 0 L 0 1600 Z"
+            );
+        }
+
+        70%, 100% {
+            opacity: 1;
+            transform: translateY(0);
+            clip-path: path(
+                "M 0 320 C 320 360, 30 100, 200 0 L 800 0 L 0 1830 Z"
+            );
+        }
+    }
+
+    @keyframes logoSequenceMobile {
+        60%, 80% {
+            opacity: 0;
+            transform: scale(0);
+        }
+        90%, 100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
