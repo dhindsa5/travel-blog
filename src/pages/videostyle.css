@@ -330,6 +330,8 @@ body{
     align-items:center;
     position: relative;
     overflow: hidden;
+    /* Ensure border-radius works on all browsers */
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .video-checkbox {
