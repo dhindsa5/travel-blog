@@ -138,7 +138,7 @@ ul {
 .nav_links a::after {
   content: "";
   position: absolute;
-  bottom: 0px;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% + 20px);
