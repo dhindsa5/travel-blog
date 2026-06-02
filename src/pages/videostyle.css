@@ -632,6 +632,9 @@ body{
     color:#FFF;
     text-decoration:none;
 }
+.footer-link:hover{
+    color: #F1C953;
+}
 
 .social-media{
     display:flex;
@@ -1081,6 +1084,7 @@ body{
         color: #FFFFFF;
         text-decoration: none;
         font-size: 16px;
+        
     }
     .copyright-text {
         color: #FFFFFF;
