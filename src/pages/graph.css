@@ -95,7 +95,7 @@ header {
     width: 72px;
     height: 72px;
     position: absolute;
-    left: 10%;
+    top: 30px;
 }
 
 .nav_links {
@@ -232,10 +232,7 @@ ul {
     .logo {
         width: 56px;
         height: 56px;
-        left: calc(50% - 32px);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        top: 10px;
     }
 
     .nav {
@@ -259,7 +256,7 @@ ul {
     .logo {
         width: 56px;
         height: 56px;
-        left: calc(50% - 32px);
+        top: 10px;
     }
 
     .nav {
