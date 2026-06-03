@@ -232,6 +232,7 @@ ul {
 .meta-item img {
   height: 18px;
   width: 18px;
+  object-fit: contain;
 }
 
 .article_meta_row {
