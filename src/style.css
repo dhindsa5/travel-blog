@@ -102,7 +102,6 @@ main {
 .nav {
   display: flex;
   align-items: center;
-  padding-left: 146px;
   padding-top: 16px;
   gap: 80px;
 }
