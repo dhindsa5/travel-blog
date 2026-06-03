@@ -202,8 +202,13 @@ ul {
     }
 
     .logo {
-        width: 70px;
-        height: 70px;
+        width: 90px;
+        height: 100px;
+        object-fit: contain;
+    }
+
+    .home_link{
+        padding-top: 10px;
     }
 }
 
@@ -289,10 +294,10 @@ ul {
 /* --- LOGO --- */
 .circle {
   position: absolute;
-  bottom: -40px;
-  left: 35%;
-  width: 130px;
-  height: 130px;
+  bottom: -90px;
+  left: 34%;
+  width: 160px;
+  height: 160px;
   z-index: 10;
 
   opacity: 0;
@@ -307,10 +312,10 @@ ul {
 
 .circle img:nth-child(1) {
   z-index: 10;
-  top: 0;
-  left: 0;
-  width: 95%;
-  height: 100%;
+  top: 6px;
+  left: 3px;
+  width: 85%;
+  height: 85%;
   object-fit: contain;
   animation: spinText 8s linear infinite;
 }
@@ -318,16 +323,16 @@ ul {
 .circle img:nth-child(2) {
   top: -4%;
   left: -6%;
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
   object-fit: contain;
 }
 
 .circle img:nth-child(3) {
-  top: 30%;
-  left: 30%;
-  width: 40%;
-  height: 40%;
+  top: 28%;
+  left: 28%;
+  width: 33%;
+  height: 33%;
   object-fit: contain;
 }
 
@@ -1253,7 +1258,7 @@ ul {
         top: 30%;
         width: 200px; 
         gap: 12px;
-        animation: textSequenceMobile 2s ease-in forwards;
+        animation: textSequenceMobile 6s ease-in forwards;
     }
 
     .headline-animation h1 {
@@ -1267,14 +1272,14 @@ ul {
     
     .animation-bg {
         width: 100%; 
-        animation: bgSequenceMobile 7s ease-in-out forwards;
+        animation: bgSequenceMobile 10s ease-in-out forwards;
     }
 
    
     .circle {
         left: 80px; 
         bottom: 230px;
-        animation: logoSequenceMobile 4s ease-in-out forwards;
+        animation: logoSequenceMobile 7s ease-in-out forwards;
     }
 
     .animation-bg img{
@@ -1303,7 +1308,7 @@ ul {
 
     /* Bild-Morphing & Wellen-Schnitt (clip-path) für max. 380px */
     @keyframes bgSequenceMobile {
-        20% {
+        10% {
             opacity: 0;
             transform: translateY(100%);
             clip-path: path(
@@ -1311,7 +1316,7 @@ ul {
             );
         }
 
-        40% {
+        30%, 60%{
             opacity: 1;
             transform: translateY(0);
             clip-path: path(
@@ -1329,11 +1334,11 @@ ul {
     }
 
     @keyframes logoSequenceMobile {
-        60%, 80% {
+         90% {
             opacity: 0;
             transform: scale(0);
         }
-        90%, 100% {
+         100% {
             opacity: 1;
             transform: scale(1);
         }
