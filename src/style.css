@@ -155,15 +155,15 @@ ul {
   color: rgba(241, 201, 83, 1);
 }
 
-.nav_links a[href="/src/home.html#highlights"]::after {
+.nav_links a[href="#highlights"]::after {
   background-image: url(../assets/img/page-carousel/highlight-hover.png);
 }
 
-.nav_links a[href="/src/home.html#faq-section"]::after {
+.nav_links a[href="#faq-section"]::after {
   background-image: url(../assets/img/page-carousel/faq-hover.png);
 }
 
-.nav_links a[href="/src/home.html#contact-section"]::after {
+.nav_links a[href="#contact-section"]::after {
   background-image: url(../assets/img/page-carousel/contact-hover.png);
 }
 
@@ -915,7 +915,7 @@ ul {
         width: 100%;
         height: 88px;
         background: #F1C953;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         gap: 48px;
         z-index: 100;
