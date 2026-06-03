@@ -115,15 +115,15 @@ ul {
   color: rgba(241, 201, 83, 1);
 }
 
-.nav_links a:nth-child(1)::after {
+.nav_links a[href="../home.html#highlights"]::after {
   background-image: url(../../assets/img/page-carousel/highlight-hover.png);
 }
 
-.nav_links a:nth-child(2)::after {
+.nav_links a[href="../home.html#faq-section"]::after {
   background-image: url(../../assets/img/page-carousel/faq-hover.png);
 }
 
-.nav_links a:nth-child(3)::after {
+.nav_links a[href="../home.html#contact-section"]::after {
   background-image: url(../../assets/img/page-carousel/contact-hover.png);
 }
 
@@ -648,7 +648,7 @@ input[name="beach-slider"] {
         width: 100%;
         height: 88px;
         background: #F1C953;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         gap: 48px;
         z-index: 100;
