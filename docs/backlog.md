@@ -1,0 +1,1 @@
+- fix mobile footer icon gaps and positions 
